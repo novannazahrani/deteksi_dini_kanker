@@ -4,7 +4,6 @@ import numpy as np
 import joblib
 from PIL import Image
 
-# ==== Fungsi Pendukung ====
 
 def equalize_hist_manual(channel):
     hist, _ = np.histogram(channel.flatten(), 256, [0, 256])
@@ -56,12 +55,10 @@ def segment_lesi_manual(img, cluster_id):
 def bitwise_and_manual(mask1, mask2):
     return ((mask1 > 0) & (mask2 > 0)).astype(np.uint8) * 255
 
-# ==== Aplikasi Streamlit ====
 
 st.title("Deteksi Dini Kanker Serviks")
 
-st.markdown("""
-**Deskripsi Aplikasi:**  
+st.markdown("""  
 Aplikasi ini digunakan untuk mendeteksi dini kanker serviks yang dapat dilihat dari acetowhite ephitalium area yang ada di sekitar daerah serviks.  
 """)
 
