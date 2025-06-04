@@ -56,7 +56,7 @@ def bitwise_and_manual(mask1, mask2):
     return ((mask1 > 0) & (mask2 > 0)).astype(np.uint8) * 255
 
 
-st.title("Deteksi Dini Kanker Serviks")
+st.title("👩🏻‍⚕Deteksi Dini Kanker Serviks👩🏻‍⚕")
 
 st.markdown("""  
 Aplikasi ini digunakan untuk mendeteksi dini kanker serviks yang dapat dilihat dari acetowhite ephitalium area yang ada di sekitar daerah serviks.  
