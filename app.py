@@ -97,7 +97,7 @@ st.markdown("""
 Aplikasi ini mendeteksi **acetowhite ephitelium area** dari citra serviks menggunakan segmentasi manual dan clustering.
 """)
 
-uploaded_file = st.file_uploader("📤 Upload gambar serviks", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader(" Upload gambar", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
     file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
