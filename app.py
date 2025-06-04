@@ -40,11 +40,11 @@ def segment_lesi_manual(img, cluster_id):
         mask1 = (hue >= 290) & (hue <= 360) & (sat >= 20) & (sat <= 100) & (val >= 180) & (val <= 240)
         mask2 = (hue >= 0) & (hue <= 100) & (sat >= 0) & (sat <= 80) & (val >= 250) & (val <= 255)
     elif cluster_id == 1:
-        mask1 = (hue >= 290) & (hue <= 360) & (sat >= 20) & (sat <= 70) & (val >= 220) & (val <= 250)
-        mask2 = (hue >= 0) & (hue <= 100) & (sat >= 0) & (sat <= 40) & (val >= 250) & (val <= 255)
-    elif cluster_id == 2:
         mask1 = (hue >= 290) & (hue <= 360) & (sat >= 70) & (sat <= 110) & (val >= 190) & (val <= 255)
         mask2 = (hue >= 0) & (hue <= 100) & (sat >= 0) & (sat <= 80) & (val >= 250) & (val <= 255)
+    elif cluster_id == 2:
+        mask1 = (hue >= 290) & (hue <= 360) & (sat >= 20) & (sat <= 70) & (val >= 220) & (val <= 250)
+        mask2 = (hue >= 0) & (hue <= 100) & (sat >= 0) & (sat <= 40) & (val >= 250) & (val <= 255)
     else:
         mask1 = (hue >= 290) & (hue <= 360) & (sat >= 20) & (sat <= 100) & (val >= 180) & (val <= 255)
         mask2 = (hue >= 0) & (hue <= 50) & (sat >= 0) & (sat <= 130) & (val >= 240) & (val <= 255)
